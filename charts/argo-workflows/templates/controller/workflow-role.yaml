@@ -30,6 +30,9 @@ rules:
       - pods/exec
     verbs:
       - create
+      - list # ?? https://github.com/argoproj/argo-workflows/commit/662a7295b
+      - watch # ??
+      - patch
   - apiGroups:
       - argoproj.io
     resources:
